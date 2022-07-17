@@ -14,8 +14,8 @@ const ListMovies = ()=>{
     useEffect(()=>{
         const fetchDataMovies= async()=>{
             try{
-            // const response = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=c0d4330747b4572aa670778c3c816b00");
-            const response = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=process.env.REACT_APP_TMDB_KEY");
+            const response = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=c0d4330747b4572aa670778c3c816b00");
+            // const response = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=process.env.REACT_APP_TMDB_KEY");
             setMovies(response.data.results);
             }catch(err){
                 console.log("Error", err)
