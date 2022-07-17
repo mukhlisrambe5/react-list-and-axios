@@ -23,7 +23,7 @@ function App() {
             Halo Warna Hijau
           </Button>
           <Button variant='contained' color='secondary'>
-            Halo Warna Biru
+            Halo Warna Biru2
           </Button>
         </Box>
       </header>
